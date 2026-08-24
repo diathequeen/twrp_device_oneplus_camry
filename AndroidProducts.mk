@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_ossi.mk
+    $(LOCAL_DIR)/twrp_camry.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_ossi-user \
-    omni_ossi-userdebug \
-    omni_ossi-eng
+    twrp_camry-user \
+    twrp_camry-userdebug \
+    twrp_camry-eng
