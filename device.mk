@@ -20,6 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Configure twrp common.mk
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+PRODUCT_PACKAGES += \
+    bootctrl.oneplus_sm6375.recovery \
+    android.hardware.boot@1.2-impl-qti.recovery
+
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 34
 PRODUCT_SHIPPING_API_LEVEL := 34
@@ -52,9 +56,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl.blair
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
